@@ -105,13 +105,15 @@
     color: #efefef!important;
     background-attachment: fixed;
     padding-top: 50px;
-    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #services
 {
     text-align: center;
     color: #efefef!important;
-    padding-bottom: 10px;
+
 }
 #services h1::after
 {
@@ -122,11 +124,266 @@
     margin: 20px auto 5px;
     width: 170px;
 }
+.icon
+{
+    font-size: 40px;
+    margin: auto;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+
 }
 .services
 {
     margin-top: 40px;
 }
+#services p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #cccccc;
+}
+.services .col-md-3:hover
+{
+    background: linear-gradient(#007bff,blue);
+    cursor: pointer;
+    transition: .1s;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+#team
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+h1{
+    text-align: center;
+    color: #555555!important;
+    padding-bottom: 10px;
+
+}
+h1:after
+{
+    content: ' ';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.profile-pic
+{
+    margin-top: 25px;
+}
+.profile-pic .img-box
+{
+    opacity: 1;
+    display: block;
+    position: relative;
+
+}
+.profile-pic .img-box img
+{
+    width: 80%;
+    border-radius: 5px;
+
+}
+.profile-pic .img-box img
+{
+    filter: grayscale(1);
+}
+.profile-pic .img-box img:hover
+{
+    filter: grayscale(0);
+    cursor: pointer;
+    transition: .7s;
+}
+.profile-pic h2
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff!important;
+}
+.profile-pic h3
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff;
+}
+.profile-pic p
+{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff;
+}
+
+#team .fab
+{
+    height: 25px;
+    width: 25px;
+    color: #007bff!important;
+    background: white;
+    padding: 4px;
+    border-radius: 50%;
+}
+.img-box ul
+{
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li
+{
+    padding: 5px;
+    display: inline-block;
+}
+.img-box:hover ul
+{
+    opacity: 1;
+
+}
+.img-box ul, li
+{
+    transition: .5s;
+}
+
+
+
+
+
+#promo
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+#price
+{
+    padding: 40px 0;
+    background: #efefef;
+
+}
+.single-price
+{
+
+    border-radius: 10px;
+    margin: 10px auto;
+    float: left;
+    display: inline;
+    width: 100%;
+    background-color: #ffffff;
+
+}
+.single-price:hover
+{
+    box-shadow: 0 2px 20px #333333;
+}
+.price-head {
+    background-color: #2196f3;
+    text-align: center;
+    padding: 10px 5px;
+    color: #efefef;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price-head p
+{
+    font-size: 25px;
+    color: #cccccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+#price span
+{
+    font-size: 15px;
+}
+.price-content
+{
+    padding:0 10px;
+    float: left;
+    display: inline;
+    width: 100%;
+
+}
+
+.price-content ul li
+{
+    border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    list-style: none;
+}
+.price-content ul li:last-child
+{
+    border-bottom: none;
+}
+
+#price .far
+{
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#price .fa-check-circle
+{
+    color: green;
+}
+#price .fa-times-circle
+{
+    color: red;
+}
+.price-button
+{
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+
+
+
+
+#testimonials
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#testimonials  .row
+{
+    margin-top: 30px;
+}
+.col-md-4
+{
+    margin: 40px auto;
+}
 
 
 
@@ -141,10 +398,47 @@
 
 
 
+.profile
+{
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+
+}
+.profile img
+{
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid #ffffff;
+}
+
+.user
+{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.profile h3
+{
+    font-size: 20px;
+    font-family: Sylfaen, sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff;
+}
+blockquote
+{
+    font-size: 16px;
+    line-height: 30px;
+}
+blockquote .fas
+{
+    padding: 10px;
+    color: #007bff;
 
 
-
-
+}
 
 
 
